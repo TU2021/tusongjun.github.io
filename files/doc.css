@@ -296,12 +296,15 @@ padding: 8px;
 
 td.pub_td1
 {
-width:50px;
+  width: 200px;
+  overflow: hidden;
 }
 td.pub_td1 img
 {
-  /*height:120px;*/
   width: 200px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
 }
 
 table.pub_table tr {
