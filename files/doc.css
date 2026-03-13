@@ -316,3 +316,18 @@ td.pub_td1 img
 table.pub_table tr {
   /*outline: thin dotted #666666;*/
 }
+
+/* Tighter spacing for publication subsection (H4 + description + table) */
+#layout-content h4 {
+  margin-top: 0.35em;
+  margin-bottom: 0.1em;
+  padding-top: 0.15em;
+}
+#layout-content .pub-desc {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+#layout-content h4 + .pub-desc + table.pub_table,
+#layout-content h4 + table.pub_table {
+  margin-top: 0.15em;
+}
