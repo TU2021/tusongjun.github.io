@@ -7,6 +7,12 @@ html {
 body {
 	margin: 30px auto; padding: 10px 50px 30px; text-align: left; color: rgb(0, 0, 0); font-family: Georgia, serif; max-width: 960px; background-color: rgb(255, 255, 255);
 }
+img.header-photo {
+	width: 220px;
+	height: 165px;  /* 4:3 */
+	object-fit: cover;
+	display: block;
+}
 #layout-menu {
 	background: rgb(246, 246, 246); border: 1px solid rgb(221, 221, 221); border-image: none; width: auto; text-align: left; padding-top: 0.5em; padding-right: 8px; padding-left: 8px; font-size: 1em; vertical-align: top; white-space: nowrap;
 }
