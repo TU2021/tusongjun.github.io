@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Tell search engines where to find your sitemap.
-Sitemap: https://tu2021.github.io/tusongjun.github.io/sitemap.xml
+Sitemap: https://tu2021.github.io/tusongjun.github.io/sitemap_tusongjun.xml
