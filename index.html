@@ -59,23 +59,7 @@
   <H4>2026.01–Present &nbsp; Agentic RL with Memory and Skills</H4>
   <P class="pub-desc">Building agents that continually acquire, organize, and reuse memory and skills through reinforcement learning.</P>
 
-  <P class="pub-summary">We transform retrieved memories into compact, grounded, and interpretable evidence traces, improving long-term memory reasoning while reducing the context passed to the answer model.</P>
-  <table class="pub_table">
-    <tr>
-      <td class="pub_td1"><img src="files/PaperFig/26_memchain_arxiv.png" class="papericon"></td>
-      <td class="pub_td2">
-        Yiwen Ma<sup title="Co-first author" aria-label="Co-first author">*</sup>, <u><i>Songjun Tu</i></u><sup title="Co-first author" aria-label="Co-first author">*</sup>, Qichao Zhang<sup title="Corresponding author" aria-label="Corresponding author">†</sup>, Dong Li, Linjing Li, Dongbin Zhao
-        <br><b>MemChain: Learning Interpretable Memory Traces for Memory-Augmented LLM Agents</b>
-        <br><i>arXiv, 2026.07</i>
-        <br>
-        [<a href="https://arxiv.org/abs/2607.24097">Paper</a>]
-        [<a href="https://github.com/mayiwen0212/MemChain">Code</a>]
-        <br>
-      </td>
-    </tr>
-  </table>
-
-  <P class="pub-summary">We enable agents to selectively utilize and continually evolve skills by using local return differences to determine whether skill-conditioned or skill-free behavior should serve as the teacher.</P>
+  <P class="pub-summary">We propose UCOB, which compares skill-conditioned and skill-free on-policy rollouts at the same task and anchor state to select the higher-return view as a local teacher and update the skill memory, yielding up to 23.5- and 18.0-point gains over state-of-the-art baselines on ALFWorld and WebShop.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_ucob_arxiv.png" class="papericon"></td>
@@ -91,7 +75,7 @@
     </tr>
   </table>
 
-  <P class="pub-summary">We enable agents to continually reuse and refine task-level and step-level experience through a dynamic dual-granularity skill bank during reinforcement learning.</P>
+  <P class="pub-summary">We propose D2Skill, which jointly trains the policy and a dynamically maintained dual-granularity skill bank using task-level guidance, step-level error correction, and hindsight utility signals, substantially improving agent performance across ALFWorld, WebShop, and Search-Augmented QA.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_arxiv_d2skill.png" class="papericon"></td>
@@ -107,9 +91,44 @@
     </tr>
   </table>
 
+  <P class="pub-summary">We propose MemChain, which converts retrieved memories into a question-conditioned plan, grounded evidence trace, and compact active memory through supervised learning and reinforcement learning, achieving state-of-the-art long-term memory performance while substantially reducing the context passed to the answer model.</P>
+  <table class="pub_table">
+    <tr>
+      <td class="pub_td1"><img src="files/PaperFig/26_memchain_arxiv.png" class="papericon"></td>
+      <td class="pub_td2">
+        Yiwen Ma<sup title="Co-first author" aria-label="Co-first author">*</sup>, <u><i>Songjun Tu</i></u><sup title="Co-first author" aria-label="Co-first author">*</sup>, Qichao Zhang, Dong Li, Linjing Li, Dongbin Zhao
+        <br><b>MemChain: Learning Interpretable Memory Traces for Memory-Augmented LLM Agents</b>
+        <br><i>arXiv, 2026.07</i>
+        <br>
+        [<a href="https://arxiv.org/abs/2607.24097">Paper</a>]
+        [<a href="https://github.com/mayiwen0212/MemChain">Code</a>]
+        <br>
+      </td>
+    </tr>
+  </table>
+
+
   <H4>2025.10–Present &nbsp; Agent Applications</H4>
+
+  <P class="pub-summary">We introduce PaperAudit-Bench, which combines controlled long-context error data with structured error detection and evidence-aware review generation, producing stricter and more discriminative automated reviews while enabling efficient detector training.</P>
+  <table class="pub_table">
+    <tr>
+      <td class="pub_td1"><img src="files/PaperFig/26_airxiv_paperaudit.png" class="papericon"></td>
+      <td class="pub_td2">
+        <u><i>Songjun Tu</i></u><sup title="Co-first author" aria-label="Co-first author">*</sup>, Yiwen Ma<sup title="Co-first author" aria-label="Co-first author">*</sup>, Jiahao Lin, Qichao Zhang, Xiangyuan Lan, Junfeng Li, Nan Xu, Linjing Li, Dongbin Zhao
+        <br><b>PaperAudit-Bench: Benchmarking Error Detection in Research Papers for Critical Automated Peer Review</b>
+        <br><i>arXiv, 2026.01</i>
+        <br>[This work is deployed in the Paper Review of <a href="https://www.scienceone.cn/lit/#/assistant">S1-Literature Science-One (磐石)</a>.]
+        <br>
+        [<a href="https://arxiv.org/abs/2601.19916">Paper</a>]
+        [<a href="https://github.com/TU2021/PaperAudit">Code</a>]
+        <br>
+      </td>
+    </tr>
+  </table>
+
   <P class="pub-desc">Developing reliable agents for scientific discovery and automated research-paper review.</P>
-  <P class="pub-summary">We improve automatic equation discovery by enabling an LLM agent to generate, evaluate, repair, and reuse candidate equations through a self-reflective closed loop.</P>
+  <P class="pub-summary">We propose STRIDE, which closes the equation-discovery loop with data-aware generation, mixed-fitting evaluation, critic-executor repair, and diversity-preserving semantic memory, improving accuracy, out-of-distribution robustness, and structural recovery across symbolic-regression benchmarks.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_arxiv_stride.png" class="papericon"></td>
@@ -125,26 +144,11 @@
       </td>
     </tr>
   </table>
-  <P class="pub-summary">We introduce a benchmark and evidence-aware framework for detecting subtle errors in long research papers and producing more critical automated peer reviews.</P>
-  <table class="pub_table">
-    <tr>
-      <td class="pub_td1"><img src="files/PaperFig/26_airxiv_paperaudit.png" class="papericon"></td>
-      <td class="pub_td2">
-        <u><i>Songjun Tu</i></u>, Yiwen Ma, Jiahao Lin, Qichao Zhang, Xiangyuan Lan, Junfeng Li, Nan Xu, Linjing Li, Dongbin Zhao
-        <br><b>PaperAudit-Bench: Benchmarking Error Detection in Research Papers for Critical Automated Peer Review</b>
-        <br><i>arXiv, 2026.01</i>
-        <br>[This work is deployed in the Paper Review of <a href="https://www.scienceone.cn/lit/#/assistant">S1-Literature Science-One (磐石)</a>.]
-        <br>
-        [<a href="https://arxiv.org/abs/2601.19916">Paper</a>]
-        [<a href="https://github.com/TU2021/PaperAudit">Code</a>]
-        <br>
-      </td>
-    </tr>
-  </table>
+
 
   <H4>2025.01–2025.09 &nbsp; LLM Reasoning</H4>
   <P class="pub-desc">Improving language-model reasoning through reinforcement learning, preference optimization, and adaptive computation.</P>
-  <P class="pub-summary">We improve multimodal reasoning by aligning visual perception with the subsequent reasoning process during reinforcement learning, thereby reducing perception-induced errors.</P>
+  <P class="pub-summary">We propose CapPO, which aligns image- and caption-conditioned reasoning through consistency regularization and KL-weighted advantage estimation, reducing perception-induced errors while improving accuracy by 6.0% on mathematical tasks and 2.4% on general reasoning tasks.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_airxiv_cappo.png" class="papericon"></td>
@@ -159,7 +163,8 @@
       </td>
     </tr>
   </table>
-  <P class="pub-summary">We enable R1-style models to decide when explicit reasoning is necessary, improving accuracy while substantially reducing unnecessary token usage.</P>
+
+  <P class="pub-summary">We propose AutoThink, which uses multi-stage reinforcement learning with reward shaping to let R1-style models choose between explicit reasoning and direct answering based on problem complexity, improving relative accuracy by 6.4% while reducing token usage by 52%.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_nips_autothink.png" class="papericon"></td>
@@ -174,7 +179,8 @@
       </td>
     </tr>
   </table>
-  <P class="pub-summary">We investigate iterative preference optimization for LLM reasoning and show that it can reach reinforcement-learning-level performance at substantially lower computational cost.</P>
+
+  <P class="pub-summary">We propose DPO-VP, which iteratively co-improves the generator and reward model through online preference learning with verifiable rewards, reaching reinforcement-learning-level reasoning performance at substantially lower computational cost.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_colm_dtr.png" class="papericon"></td>
@@ -192,7 +198,7 @@
 
   <H4>2023.09–2024.12 &nbsp; Reinforcement Learning</H4>
   <P class="pub-desc">Studying preference-based reinforcement learning with trajectory regularization and language-model feedback.</P>
-  <P class="pub-summary">We replace privileged scripted feedback in online preference-based reinforcement learning with LLM-generated imagined trajectories and more reliable preference labels.</P>
+  <P class="pub-summary">We propose RL-SaLLM-F, which uses LLM reflection to generate self-augmented trajectories and preference labels with a double-check mechanism, providing effective online preference feedback without privileged information.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_aamas_rlsallmf.png" class="papericon"></td>
@@ -207,7 +213,7 @@
       </td>
     </tr>
   </table>
-  <P class="pub-summary">We mitigate reward overestimation and unreliable trajectory stitching in offline preference-based reinforcement learning by regularizing policy learning toward high-return in-dataset trajectories.</P>
+  <P class="pub-summary">We propose DTR, which combines Decision Transformer, TD learning, and ensemble-normalized rewards to regularize policy learning toward high-return in-dataset trajectories, outperforming state-of-the-art offline preference-based reinforcement learning baselines under reward bias.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_aaai_dtr.png" class="papericon"></td>
@@ -227,6 +233,7 @@
   <P class="pub-desc">Additional publications on agentic learning, LLM training, and reinforcement learning.</P>
 
   <H4>Agentic RL and Agent Applications</H4>
+  Are Full Rollouts Necessary for On-Policy Distillation?
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_arxiv_pi-play.png" class="papericon"></td>
