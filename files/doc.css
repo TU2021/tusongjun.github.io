@@ -327,6 +327,12 @@ table.pub_table tr {
   margin-top: 0;
   margin-bottom: 0.05em;
 }
+.pub-summary {
+  color: rgb(68, 68, 68);
+  display: inline-block;
+  line-height: 1.35;
+  margin-top: 0.2em;
+}
 #layout-content h4 + .pub-desc + table.pub_table,
 #layout-content h4 + table.pub_table {
   margin-top: 0.05em;
