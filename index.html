@@ -15,6 +15,11 @@
 
 
 <BODY>
+  <NAV class="language-switcher" aria-label="Language switcher">
+    <BUTTON type="button" class="language-button active" data-language="en" aria-pressed="true">English</BUTTON>
+    <SPAN aria-hidden="true">/</SPAN>
+    <BUTTON type="button" class="language-button" data-language="zh" aria-pressed="false">中文</BUTTON>
+  </NAV>
   <DIV id="layout-content" style="margin-top: 25px;">
   <TABLE>
     <TBODY>
@@ -23,7 +28,7 @@
         <DIV id="toptitle">
         <H1>Tu Songjun (凃崧峻) &nbsp;</H1></DIV>
         <!-- <H3>Ph.D. Student</H3> -->
-        <P>I am a Ph.D. student at the <A href="http://www.ia.cas.cn/">Institute of Automation, Chinese Academy of Sciences</A> (CASIA), supervised by <A href="https://people.ucas.ac.cn/~zhaodongbin">Prof. Dongbin Zhao</A> and <A href="https://people.ucas.ac.cn/~0044631">Prof. Qichao Zhang</A>. My research interests include <b>large language models</b> and <b>reinforcement learning</b>.
+        <P data-i18n="profile-intro">I am a Ph.D. student at the <A href="http://www.ia.cas.cn/">Institute of Automation, Chinese Academy of Sciences</A> (CASIA), supervised by <A href="https://people.ucas.ac.cn/~zhaodongbin">Prof. Dongbin Zhao</A> and <A href="https://people.ucas.ac.cn/~0044631">Prof. Qichao Zhang</A>. My research interests include <b>large language models</b> and <b>reinforcement learning</b>.
         <BR>
         <BR> <b></b>Google Scholar: </b>
         <A href="https://scholar.google.com/citations?user=_5Ir0soAAAAJ&hl">Songjun Tu</A>
@@ -40,8 +45,8 @@
   <DIV id="layout-content" style="margin-top: 25px;">
 
 
-  <H2>Biography</H2>
-  <P>
+  <H2 data-i18n="biography-heading">Biography</H2>
+  <P data-i18n="biography-content">
     <b>Education</b>
     <br>2019–2023 &nbsp; B.E. in Automation, Central South University, Changsha, China. Advisor: <A href="https://scholar.google.com/citations?user=moJX_0kAAAAJ&hl">Wenfeng Hu</A>.
     <br>2023–present &nbsp; Ph.D. student in Control Theory and Control Engineering, Institute of Automation, Chinese Academy of Sciences, Beijing, China. Advisors: <A href="https://scholar.google.com/citations?user=RxvYlNQAAAAJ&hl">Dongbin Zhao</A> and <A href="https://scholar.google.com/citations?user=snkECPAAAAAJ&hl">Qichao Zhang</A>.
@@ -51,15 +56,15 @@
     <br>2024–present &nbsp; Research Assistant, Pengcheng Laboratory, Shenzhen, China. Advisor: <A href="https://scholar.google.com/citations?user=c3iwWRcAAAAJ&hl">Xiangyuan Lan</A>.
   </P>
 
-  <H2>Publications</H2>
+  <H2 data-i18n="publications-heading">Publications</H2>
 
-  <H3>Main Publications</H3>
-  <P class="pub-desc">Since beginning my Ph.D. studies, I have conducted research in reinforcement learning, LLM reasoning, agent applications, and agentic RL with memory and skills. <i>* denotes co-first authorship, and † denotes corresponding authorship.</i></P>
+  <H3 data-i18n="main-publications-heading">Main Publications</H3>
+  <P class="pub-desc" data-i18n="main-publications-intro">Since beginning my Ph.D. studies, I have conducted research in reinforcement learning, LLM reasoning, agent applications, and agentic RL with memory and skills. <i>* denotes co-first authorship, and † denotes corresponding authorship.</i></P>
 
-  <H4>2026.01–Present &nbsp; Agentic RL with Memory and Skills</H4>
-  <P class="pub-desc">Building agents that continually acquire, organize, and reuse memory and skills through reinforcement learning.</P>
+  <H4 data-i18n="phase-agentic-rl">2026.01–Present &nbsp; Agentic RL with Memory and Skills</H4>
+  <P class="pub-desc" data-i18n="phase-agentic-rl-desc">Building agents that continually acquire, organize, and reuse memory and skills through reinforcement learning.</P>
 
-  <P class="pub-summary">Skill-conditioned and skill-free behaviors teach each other in UCOB, allowing agents to use helpful skills while correcting misleading ones.</P>
+  <P class="pub-summary" data-i18n="summary-ucob">Skill-conditioned and skill-free behaviors teach each other in UCOB, allowing agents to use helpful skills while correcting misleading ones.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_ucob_arxiv.png" class="papericon"></td>
@@ -75,7 +80,7 @@
     </tr>
   </table>
 
-  <P class="pub-summary">An evolving bank of task- and step-level skills lets agents reuse experience at different decision scales.</P>
+  <P class="pub-summary" data-i18n="summary-d2skill">An evolving bank of task- and step-level skills lets agents reuse experience at different decision scales.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_arxiv_d2skill.png" class="papericon"></td>
@@ -91,7 +96,7 @@
     </tr>
   </table>
 
-  <P class="pub-summary">Retrieved memories are reorganized into compact, grounded evidence traces, making long-term memory use more interpretable and effective.</P>
+  <P class="pub-summary" data-i18n="summary-memchain">Retrieved memories are reorganized into compact, grounded evidence traces, making long-term memory use more interpretable and effective.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_memchain_arxiv.png" class="papericon"></td>
@@ -108,9 +113,9 @@
   </table>
 
 
-  <H4>2025.10–Present &nbsp; Agent Applications</H4>
+  <H4 data-i18n="phase-agent-applications">2025.10–Present &nbsp; Agent Applications</H4>
 
-  <P class="pub-summary">PaperAudit-Bench tests whether LLMs can uncover subtle errors across long research papers and generate evidence-aware peer reviews.</P>
+  <P class="pub-summary" data-i18n="summary-paperaudit">PaperAudit-Bench tests whether LLMs can uncover subtle errors across long research papers and generate evidence-aware peer reviews.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_airxiv_paperaudit.png" class="papericon"></td>
@@ -118,7 +123,7 @@
         <u><i>Songjun Tu</i></u><sup title="Co-first author" aria-label="Co-first author">*</sup>, Yiwen Ma<sup title="Co-first author" aria-label="Co-first author">*</sup>, Jiahao Lin, Qichao Zhang, Xiangyuan Lan, Junfeng Li, Nan Xu, Linjing Li, Dongbin Zhao
         <br><b>PaperAudit-Bench: Benchmarking Error Detection in Research Papers for Critical Automated Peer Review</b>
         <br><i>arXiv, 2026.01</i>
-        <br>[This work is deployed in the Paper Review of <a href="https://www.scienceone.cn/lit/#/assistant">S1-Literature Science-One (磐石)</a>.]
+        <br><span data-i18n="note-paperaudit">[This work is deployed in the Paper Review of <a href="https://www.scienceone.cn/lit/#/assistant">S1-Literature Science-One (磐石)</a>.]</span>
         <br>
         [<a href="https://arxiv.org/abs/2601.19916">Paper</a>]
         [<a href="https://github.com/TU2021/PaperAudit">Code</a>]
@@ -127,8 +132,8 @@
     </tr>
   </table>
 
-  <P class="pub-desc">Developing reliable agents for scientific discovery and automated research-paper review.</P>
-  <P class="pub-summary">A self-reflective loop enables LLM agents to generate, evaluate, repair, and remember candidate equations for reliable equation discovery.</P>
+  <P class="pub-desc" data-i18n="phase-agent-applications-desc">Developing reliable agents for scientific discovery and automated research-paper review.</P>
+  <P class="pub-summary" data-i18n="summary-stride">A self-reflective loop enables LLM agents to generate, evaluate, repair, and remember candidate equations for reliable equation discovery.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_arxiv_stride.png" class="papericon"></td>
@@ -136,7 +141,7 @@
         Jiarui Su, <u><i>Songjun Tu</i></u><sup title="Corresponding author" aria-label="Corresponding author">†</sup>, Bei Sun, Xiaojun Liang
         <br><b>STRIDE: A Self-Reflective Agent Framework for Reliable Automatic Equation Discovery</b>
         <br><i>arXiv, 2026.05</i>
-        <br>[Co-corresponding author. Lead the project. In collaboration with Central South University.]
+        <br><span data-i18n="note-stride">[Co-corresponding author. Lead the project. In collaboration with Central South University.]</span>
         <br>
         [<a href="https://arxiv.org/abs/2605.17790">Paper</a>]
         [<a href="https://github.com/SU-Jiarui/STRIDE">Code</a>]
@@ -146,9 +151,9 @@
   </table>
 
 
-  <H4>2025.01–2025.09 &nbsp; LLM Reasoning</H4>
-  <P class="pub-desc">Improving language-model reasoning through reinforcement learning, preference optimization, and adaptive computation.</P>
-  <P class="pub-summary">Aligning visual perception with the reasoning process keeps multimodal models grounded and reduces perception-induced errors.</P>
+  <H4 data-i18n="phase-llm-reasoning">2025.01–2025.09 &nbsp; LLM Reasoning</H4>
+  <P class="pub-desc" data-i18n="phase-llm-reasoning-desc">Improving language-model reasoning through reinforcement learning, preference optimization, and adaptive computation.</P>
+  <P class="pub-summary" data-i18n="summary-cappo">Aligning visual perception with the reasoning process keeps multimodal models grounded and reduces perception-induced errors.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_airxiv_cappo.png" class="papericon"></td>
@@ -164,7 +169,7 @@
     </tr>
   </table>
 
-  <P class="pub-summary">Reasoning models learn when to think step by step and when to answer directly, avoiding unnecessary computation on simple problems.</P>
+  <P class="pub-summary" data-i18n="summary-autothink">Reasoning models learn when to think step by step and when to answer directly, avoiding unnecessary computation on simple problems.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_nips_autothink.png" class="papericon"></td>
@@ -180,7 +185,7 @@
     </tr>
   </table>
 
-  <P class="pub-summary">Iterative preference optimization lets the generator and reward model improve together, providing an efficient path to stronger LLM reasoning.</P>
+  <P class="pub-summary" data-i18n="summary-dpovp">Iterative preference optimization lets the generator and reward model improve together, providing an efficient path to stronger LLM reasoning.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_colm_dtr.png" class="papericon"></td>
@@ -196,9 +201,9 @@
     </tr>
   </table>
 
-  <H4>2023.09–2024.12 &nbsp; Reinforcement Learning</H4>
-  <P class="pub-desc">Studying preference-based reinforcement learning with trajectory regularization and language-model feedback.</P>
-  <P class="pub-summary">LLM-generated preferences and imagined trajectories replace privileged scripted feedback in online preference-based reinforcement learning.</P>
+  <H4 data-i18n="phase-rl">2023.09–2024.12 &nbsp; Reinforcement Learning</H4>
+  <P class="pub-desc" data-i18n="phase-rl-desc">Studying preference-based reinforcement learning with trajectory regularization and language-model feedback.</P>
+  <P class="pub-summary" data-i18n="summary-rlsallmf">LLM-generated preferences and imagined trajectories replace privileged scripted feedback in online preference-based reinforcement learning.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_aamas_rlsallmf.png" class="papericon"></td>
@@ -213,7 +218,7 @@
       </td>
     </tr>
   </table>
-  <P class="pub-summary">Policy learning is anchored to reliable in-dataset trajectories to counter reward bias in offline preference-based reinforcement learning.</P>
+  <P class="pub-summary" data-i18n="summary-dtr">Policy learning is anchored to reliable in-dataset trajectories to counter reward bias in offline preference-based reinforcement learning.</P>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/25_aaai_dtr.png" class="papericon"></td>
@@ -229,10 +234,10 @@
     </tr>
   </table>
 
-  <H3>Co-authored Publications</H3>
-  <P class="pub-desc">Additional publications on agentic learning, LLM training, and reinforcement learning.</P>
+  <H3 data-i18n="coauthored-heading">Co-authored Publications</H3>
+  <P class="pub-desc" data-i18n="coauthored-desc">Additional publications on agentic learning, LLM training, and reinforcement learning.</P>
 
-  <H4>Agentic RL and Agent Applications</H4>
+  <H4 data-i18n="coauthored-agent-heading">Agentic RL and Agent Applications</H4>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_popd_arxiv.png" class="papericon"></td>
@@ -242,7 +247,7 @@
         <br><i>arXiv, 2026.05</i>
         <br>
         [<a href="https://arxiv.org/abs/2605.31490">Paper</a>]
-        [Code]
+        [<span class="publication-label" data-label-en="Code" data-label-zh="代码">Code</span>]
         <br>
       </td>
     </tr>
@@ -256,7 +261,7 @@
         <br><i>arXiv, 2026.04</i>
         <br>
         [<a href="https://arxiv.org/abs/2604.14054">Paper</a>]
-        [Code]
+        [<span class="publication-label" data-label-en="Code" data-label-zh="代码">Code</span>]
         <br>
       </td>
     </tr>
@@ -276,7 +281,7 @@
     </tr>
   </table>
 
-  <H4>LLM Reasoning and Training</H4>
+  <H4 data-i18n="coauthored-llm-heading">LLM Reasoning and Training</H4>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_srft_iclr.png" class="papericon"></td>
@@ -320,7 +325,7 @@
     </tr>
   </table>
 
-  <H4>Reinforcement Learning</H4>
+  <H4 data-i18n="coauthored-rl-heading">Reinforcement Learning</H4>
   <table class="pub_table">
     <tr>
       <td class="pub_td1"><img src="files/PaperFig/26_srcp_cvpr.png" class="papericon"></td>
@@ -381,6 +386,126 @@
   <!-- <H2>Github Statistics</H2>
   <td class="pub_td1"><img src="https://github-readme-stats.vercel.app/api?username=tusongjun&show_icons=true&include_all_commits=true&title_color=2c86ea&icon_color=2c86ea&text_color=00c800&bg_color=00000000" alt="GitHub Stats"></td> -->
 
+  <SCRIPT>
+    (function () {
+      var translations = {
+        "profile-intro": `我现为<a href="http://www.ia.cas.cn/">中国科学院自动化研究所</a>博士研究生，由<a href="https://people.ucas.ac.cn/~zhaodongbin">赵冬斌教授</a>和<a href="https://people.ucas.ac.cn/~0044631">张奇超教授</a>指导。我的研究方向包括<b>大语言模型</b>和<b>强化学习</b>。
+        <br><br><b>Google Scholar：</b>
+        <a href="https://scholar.google.com/citations?user=_5Ir0soAAAAJ&hl">Songjun Tu</a>
+        <br><b>邮箱：</b>
+        <a href="tusongjun2023@ia.ac.cn">tusongjun2023@ia.ac.cn</a>
+        <br><br>`,
+        "biography-heading": "个人简介",
+        "biography-content": `<b>教育经历</b>
+        <br>2019–2023 &nbsp; 自动化专业工学学士，中南大学，长沙。导师：<a href="https://scholar.google.com/citations?user=moJX_0kAAAAJ&hl">Wenfeng Hu</a>。
+        <br>2023–至今 &nbsp; 控制理论与控制工程专业博士研究生，中国科学院自动化研究所，北京。导师：<a href="https://scholar.google.com/citations?user=RxvYlNQAAAAJ&hl">Dongbin Zhao</a>、<a href="https://scholar.google.com/citations?user=snkECPAAAAAJ&hl">Qichao Zhang</a>。
+        <br>2024–至今 &nbsp; 研究助理，鹏城实验室，深圳。导师：<a href="https://scholar.google.com/citations?user=c3iwWRcAAAAJ&hl">Xiangyuan Lan</a>。`,
+        "publications-heading": "论文发表",
+        "main-publications-heading": "主要论文",
+        "main-publications-intro": "自攻读博士以来，我先后围绕强化学习、大语言模型推理、智能体应用，以及具有记忆与技能的智能体强化学习开展研究。<i>* 表示共同第一作者，† 表示通讯作者。</i>",
+        "phase-agentic-rl": "2026.01–至今 &nbsp; 具有记忆与技能的智能体强化学习",
+        "phase-agentic-rl-desc": "通过强化学习构建能够持续获取、组织和复用记忆与技能的智能体。",
+        "summary-ucob": "UCOB 让技能条件行为与无技能行为相互学习，使智能体能够利用有益技能并纠正误导性技能。",
+        "summary-d2skill": "一个持续演化的任务级与步骤级技能库，使智能体能够在不同决策粒度上复用经验。",
+        "summary-memchain": "将检索到的记忆重新组织为紧凑且有依据的证据链，使长期记忆的使用更具可解释性和有效性。",
+        "phase-agent-applications": "2025.10–至今 &nbsp; 智能体应用",
+        "summary-paperaudit": "PaperAudit-Bench 检验大语言模型能否发现长篇研究论文中的隐蔽错误，并生成基于证据的同行评审意见。",
+        "note-paperaudit": "[该工作已部署于 <a href=\"https://www.scienceone.cn/lit/#/assistant\">S1-Literature Science-One（磐石）</a>的论文评审功能。]",
+        "phase-agent-applications-desc": "面向科学发现与自动化论文评审，开发可靠的智能体应用。",
+        "summary-stride": "自反思闭环使大语言模型智能体能够生成、评估、修正并记忆候选方程，从而实现更可靠的自动方程发现。",
+        "note-stride": "[共同通讯作者，项目负责人。该工作与中南大学合作完成。]",
+        "phase-llm-reasoning": "2025.01–2025.09 &nbsp; 大语言模型推理",
+        "phase-llm-reasoning-desc": "通过强化学习、偏好优化与自适应计算提升大语言模型的推理能力。",
+        "summary-cappo": "在策略优化过程中对齐视觉感知与推理，使多模态模型保持视觉语义一致并减少感知错误。",
+        "summary-autothink": "推理模型能够根据问题难度决定逐步思考或直接作答，避免在简单问题上进行不必要的计算。",
+        "summary-dpovp": "迭代式偏好优化使生成模型与奖励模型协同提升，为增强大语言模型推理提供高效路径。",
+        "phase-rl": "2023.09–2024.12 &nbsp; 强化学习",
+        "phase-rl-desc": "研究基于轨迹正则化与大语言模型反馈的偏好强化学习。",
+        "summary-rlsallmf": "利用大语言模型生成的偏好与想象轨迹，替代在线偏好强化学习中依赖特权信息的脚本反馈。",
+        "summary-dtr": "将策略学习约束在可靠的数据集内轨迹上，以缓解离线偏好强化学习中的奖励偏差。",
+        "coauthored-heading": "合作论文",
+        "coauthored-desc": "围绕智能体学习、大语言模型训练与强化学习开展的其他合作研究。",
+        "coauthored-agent-heading": "智能体强化学习与智能体应用",
+        "coauthored-llm-heading": "大语言模型推理与训练",
+        "coauthored-rl-heading": "强化学习"
+      };
+
+      var translatableElements = Array.prototype.slice.call(document.querySelectorAll("[data-i18n]"));
+      translatableElements.forEach(function (element) {
+        element.dataset.englishHtml = element.innerHTML;
+      });
+
+      var publicationLinks = Array.prototype.slice.call(document.querySelectorAll(".pub_td2 a")).filter(function (link) {
+        var label = link.textContent.trim();
+        return label === "Paper" || label === "Code";
+      });
+      publicationLinks.forEach(function (link) {
+        link.dataset.englishLabel = link.textContent.trim();
+      });
+
+      var roleMarkers = Array.prototype.slice.call(document.querySelectorAll("[title='Co-first author'], [title='Corresponding author']"));
+      var switcher = document.querySelector(".language-switcher");
+      var buttons = Array.prototype.slice.call(document.querySelectorAll(".language-button"));
+
+      function setLanguage(language, updateUrl) {
+        var isChinese = language === "zh";
+
+        translatableElements.forEach(function (element) {
+          var key = element.dataset.i18n;
+          element.innerHTML = isChinese ? translations[key] : element.dataset.englishHtml;
+        });
+
+        publicationLinks.forEach(function (link) {
+          link.textContent = isChinese
+            ? (link.dataset.englishLabel === "Paper" ? "论文" : "代码")
+            : link.dataset.englishLabel;
+        });
+
+        document.querySelectorAll(".publication-label").forEach(function (label) {
+          label.textContent = isChinese ? label.dataset.labelZh : label.dataset.labelEn;
+        });
+
+        roleMarkers.forEach(function (marker) {
+          var isCoFirst = marker.getAttribute("title") === "Co-first author" || marker.dataset.role === "co-first";
+          marker.dataset.role = isCoFirst ? "co-first" : "corresponding";
+          var roleLabel = isChinese
+            ? (isCoFirst ? "共同第一作者" : "通讯作者")
+            : (isCoFirst ? "Co-first author" : "Corresponding author");
+          marker.setAttribute("title", roleLabel);
+          marker.setAttribute("aria-label", roleLabel);
+        });
+
+        document.documentElement.lang = isChinese ? "zh-CN" : "en";
+        document.title = isChinese ? "凃崧峻个人主页" : "Tu Songjun (凃崧峻)";
+        switcher.setAttribute("aria-label", isChinese ? "语言切换" : "Language switcher");
+
+        buttons.forEach(function (button) {
+          var active = button.dataset.language === language;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+
+        if (updateUrl) {
+          var url = new URL(window.location.href);
+          if (isChinese) {
+            url.searchParams.set("lang", "zh");
+          } else {
+            url.searchParams.delete("lang");
+          }
+          window.history.replaceState({}, "", url);
+        }
+      }
+
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          setLanguage(button.dataset.language, true);
+        });
+      });
+
+      var initialLanguage = new URLSearchParams(window.location.search).get("lang") === "zh" ? "zh" : "en";
+      setLanguage(initialLanguage, false);
+    })();
+  </SCRIPT>
 
 </BODY>
 </HTML>

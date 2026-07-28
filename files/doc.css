@@ -5,7 +5,34 @@ html {
 	background-color: rgb(238, 238, 238);
 }
 body {
-	margin: 30px auto; padding: 10px 50px 30px; text-align: left; color: rgb(0, 0, 0); font-family: Georgia, serif; max-width: 960px; background-color: rgb(255, 255, 255);
+	margin: 30px auto; padding: 10px 50px 30px; text-align: left; color: rgb(0, 0, 0); font-family: Georgia, "Songti SC", "Noto Serif CJK SC", serif; max-width: 960px; background-color: rgb(255, 255, 255);
+}
+.language-switcher {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.45em;
+	margin: 0 1em -10px;
+	font-size: 90%;
+}
+.language-button {
+	appearance: none;
+	background: none;
+	border: 0;
+	border-bottom: 1px solid transparent;
+	color: rgb(34, 75, 141);
+	cursor: pointer;
+	font: inherit;
+	padding: 0.15em 0;
+}
+.language-button:hover,
+.language-button:focus-visible {
+	border-bottom-color: rgb(34, 75, 141);
+}
+.language-button.active {
+	border-bottom-color: rgb(34, 75, 141);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
 }
 img.header-photo {
 	width: 220px;
